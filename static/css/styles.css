@@ -1,0 +1,161 @@
+/* Globoticket/static/css/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+}
+
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.search-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#cityInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #4cae4c;
+}
+
+.results-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.results-section h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+#eventList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#eventList li {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    display: flex; /* Para alinear imagen y texto */
+    gap: 15px; /* Espacio entre imagen y texto */
+}
+
+#eventList li img {
+    max-width: 150px; /* Ajustar según sea necesario */
+    max-height: 100px; /* Ajustar según sea necesario */
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+#eventList li .event-details {
+    flex-grow: 1;
+}
+
+#eventList li h3 { /* Nombre del evento */
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #337ab7;
+}
+
+#eventList li p { /* Fecha, Lugar */
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+#eventList li a { /* Enlace "Más información" */
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #337ab7;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+#eventList li a:hover {
+    background-color: #286090;
+}
+
+.loading, .error-message {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+.loading {
+    color: #555;
+}
+
+.error-message {
+    color: #d9534f; /* Rojo para errores */
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777;
+    border-top: 1px solid #eee;
+}

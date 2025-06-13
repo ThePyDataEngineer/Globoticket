@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globoticket - Buscador de Eventos</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Globoticket</h1>
+        <p>Encuentra eventos en tu ciudad</p>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <input type="text" id="cityInput" placeholder="Ingrese el nombre de la ciudad">
+            <button id="searchButton">Buscar Eventos</button>
+        </section>
+
+        <section class="results-section">
+            <h2>Resultados</h2>
+            <div id="loadingIndicator" class="loading" style="display: none;">
+                Cargando eventos...
+            </div>
+            <div id="errorMessage" class="error-message" style="display: none;">
+                <!-- Los mensajes de error se mostrarán aquí -->
+            </div>
+            <ul id="eventList">
+                <!-- Los eventos se listarán aquí dinámicamente -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Globoticket. Eventos por Ticketmaster.</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript (al final del body para mejor rendimiento) -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
